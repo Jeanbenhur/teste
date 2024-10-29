@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--fim boostrap-->
+    <title>Ivi - Gestão escolar</title>
+    <p>IVI GESTÃO ESCOLAR</p>
+</head>
+<i class="bi bi-book-half"></i>
+<body>
+    
+    <form class="cadastro">
+        <header>
+            Registro
+        </header>
+        <div>
+        <div><label>Email</label></div>
+        <input type="email" placeholder="seu@email.com"onchange="onChangeEmail()" id="email">
+        <div class="error" id="email-required-error">
+            Email é obrigatório
+        </div>
+        <div class="error" id="email-invalid-error">
+            Email é inválido
+        </div>
+        </div>
+        <div>
+        <div><label>Senha</label></div>
+        <input type="password" placeholder="Senha"id="password" onchange="onChangePassword()">
+        <div class="error" id="password-required-error">
+            Senha é obrigatório
+        </div>
+        <div class="error" id="password-min-length-error">
+            Senha deve ter pelo menos 6 caracteres
+        </div>
+        </div>
+        <div>
+        <div><label>Confirmar</label></div>
+        <input type="password"placeholder="Confirmar Senha" id="confirmPassword" onchange="onChangeConfirmPassword()">
+        <div class="error" id="password-doesnt-match-error">
+            Senha e Confirmar senha devem ser iguais
+        </div>
+        </div>
+        <div>
+            <button type="button" disabled="true" id="register-button" onclick="register()">Registrar</button>
+        </div>
+        <div>
+            <button type="button">Login</button>
+        </div>    
+    </form>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+<script src="register.js"></script>
+<script src="validate.js"></script>
+<script src="loading.js"></script>
+
+</html>

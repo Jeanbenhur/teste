@@ -1,0 +1,20 @@
+{
+  "name": "programa-escolar",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "funcoes.js",
+  "main": "funcoes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "firebase": "^10.12.5",
+    "firebase-admin": "^12.6.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
